@@ -14,6 +14,9 @@
 <%= simple_form_for [@restaurant, Review.new] do |f| %>
   <%= f.input :content %>
   <%= f.input :rating, collection: (0..5) %>
+  <br>
   <%= f.submit "Submit review", class: "btn btn-primary" %>
 <% end %>
+<br>
+<br>
 <%= link_to 'Back', restaurants_path %>
